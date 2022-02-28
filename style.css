@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+/* for desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+header{
+    text-align: center;
+    background-color: yellowgreen;
+    padding: 1% 5%;
+}
+
+/* selecting every column */
+[class*=col-]{
+    float: left;
+    padding: 10px;
+}
+
+.main{
+    background-color: azure;
+}
+
+.main::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.nav-menu{
+    background-color: blueviolet;
+    padding: 1% 5%;
+}
+
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.details{
+    padding: 1% 5%;
+    background-color: cadetblue;
+}
+
+.details h1{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.details p{
+    text-align: justify;
+}
+
+.aside{
+    padding: 1% 5%;
+    background-color:cornflowerblue;
+    text-align: center;
+}
+
+footer{
+    padding: 30px;
+    background-color: yellowgreen;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
